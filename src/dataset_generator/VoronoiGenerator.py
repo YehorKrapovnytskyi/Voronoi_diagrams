@@ -62,7 +62,7 @@ class VoronoiGenerator:
         figsize = (width / self.DEFAULT_DIMENSION, height / self.DEFAULT_DIMENSION) # Convert pixels to inches
         fig, ax = plt.subplots(figsize=figsize, dpi=self.DEFAULT_DIMENSION)
         voronoi_plot_2d(vor, ax=ax, show_vertices=False, show_points=False, line_colors='black', line_width=0.3)
-        ax.plot(points[:, 0], points[:, 1], color='red', marker='o', ms=0.2, lw=0, linestyle="", mew=0)
+        #ax.plot(points[:, 0], points[:, 1], color='red', marker='o', ms=0.2, lw=0, linestyle="", mew=0)
         self._set_line_styles(ax)
 
         ax.set_xlim([0, width])
